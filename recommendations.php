@@ -111,7 +111,7 @@ function get_recommendations($video_id, $con, $title, $tree, $tree_nodes, $paren
 		$priority[$i] = 99999;
 	}
 
-	$getposts = mysqli_query($con,"SELECT * FROM mined_sequences WHERE count > 1");
+	$getposts = mysqli_query($con,"SELECT * FROM mined_sequences WHERE count > 1 ORDER BY count DESC");
 	while($row = mysqli_fetch_assoc($getposts))
 	{
 		$sequence = $row["sequence"];
