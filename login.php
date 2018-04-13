@@ -1,6 +1,8 @@
 <html>
 <head>
 	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<title>ML@Kgp</title>
 </head>
 <body>
 	<div class="container">
